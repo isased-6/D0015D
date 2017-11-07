@@ -1,0 +1,189 @@
+html
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+header
+{
+    background-image: url("../img/header_anpassad.jpg");
+    padding: 10px 0px;
+}
+
+
+nav > ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    height: 300px;
+    
+}
+
+.menyitem
+{
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    margin: 0px 45px;
+    text-transform: uppercase;
+    font-size: x-large;
+    text-align: center;
+    min-width: 100px;
+}
+
+.menyitem:before 
+{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.menyitem > a, .menyitem > a:visited, .menyitem > a:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+.menyitem > a,
+.menyitem > a:after,
+.menyitem > a:before {
+  transition: all .5s;
+}
+
+.menyitem > a{
+  position: relative;
+}
+.menyitem > a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+.menyitem > a:hover:after {
+  width: 100%;
+}
+
+.menyitem > a {
+  transition: all 2s;
+}
+
+.menyitem > a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+.menyitem > a:hover {
+  color: #fff;
+  z-index: 1;
+}
+.menyitem > a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+
+
+/*
+
+Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=1100 
+
+
+
+*/
+
+
+
+
+/*
+	START Header slider
+*/
+
+#slider
+{
+	color:			white;
+	box-sizing: 	border-box;
+	padding:		50px 20px;
+	background:		none;
+	text-align:	 	center;
+	position:		relative;
+	margin-bottom:	-70px;
+}
+
+#arrowLeft, #arrowRight
+{
+	  position: 	absolute;
+	  z-index:  	9999;
+	  display:		none;
+	  font-size:	30px;
+	  cursor:		pointer;
+	  bottom:		70px;
+	  display:		none;
+}
+
+#arrowLeft
+{
+  left:		20px;
+}
+
+#arrowRight
+{
+  right: 20px;
+}
+
+.slides-wrapper
+{
+  position: 	relative;
+  width: 		100%;
+  overflow: 	hidden;
+  white-space:	nowrap;
+}
+
+.slide
+{
+    width:			100%;
+    display:		inline-block;
+    box-sizing:		border-box;
+    margin:			0;
+    white-space:	normal;
+}
+
+.text
+{
+    display:		inline-block;
+    position:		relative;
+    max-width:		500px;
+}
+
+.text > p
+{
+    white-space: 	normal;
+    font-size:		1.4em;
+}
+
+.text > .name
+{
+    font-style:	italic;
+}
+}
+
+/*
+	END Header slider
+*/
