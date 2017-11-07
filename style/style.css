@@ -16,6 +16,10 @@ header
     padding: 10px 0px;
 }
 
+nav
+{
+    width: 100%;
+}
 
 nav > ul
 {
@@ -24,18 +28,44 @@ nav > ul
     padding: 0;
     text-align: center;
     height: 100%;
+    width: 100%;
 }
 
 .menyitem
 {
-    display: inline-block;
     vertical-align: middle;
     padding: 5px;
-    margin: 0px 45px;
     text-transform: uppercase;
     font-size: x-large;
     text-align: center;
     min-width: 100px;
+    
+    display: block;
+    margin: 0px 0px;
+}
+
+@media (min-width: 800px)
+{
+    .menyitem
+    {
+        display: inline-block;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    .menyitem
+    {
+        margin: 0px 20px;
+    }
+}
+
+@media (min-width: 1250px)
+{
+    .menyitem
+    {
+        margin: 0px 45px;
+    }
 }
 
 .menyitem:before 
@@ -99,6 +129,10 @@ nav > ul
   opacity: 1;
 }
 
+.logo
+{
+    max-width: 100%;
+}
 
 /*
 
@@ -131,10 +165,18 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
 	  position: 	absolute;
 	  z-index:  	9999;
 	  display:		none;
-	  font-size:	30px;
+	  font-size:	35px;
 	  cursor:		pointer;
 	  bottom:		70px;
 	  display:		none;
+}
+
+@media (min-width: 620px)
+{
+    #arrowLeft, #arrowRight
+    {
+        font-size: 100px;
+    }
 }
 
 #arrowLeft
@@ -181,8 +223,16 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
 {
     font-style:	italic;
 }
-}
+
 
 /*
 	END Header slider
 */
+
+footer 
+{
+    background: #f7f7f7; 
+    text-align: center;
+    padding: 40px 0px;
+    
+}
