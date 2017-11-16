@@ -31,6 +31,11 @@ nav > ul
     width: 100%;
 }
 
+.menyactive
+{
+    font-weight: bold;
+}
+
 .menyitem
 {
     vertical-align: middle;
@@ -46,6 +51,7 @@ nav > ul
 
 @media (min-width: 800px)
 {
+
     .menyitem
     {
         display: inline-block;
@@ -65,6 +71,14 @@ nav > ul
     .menyitem
     {
         margin: 0px 45px;
+    }
+}
+
+@media (max-width: 220px)
+{
+    .text
+    {
+        word-wrap: break-word;    
     }
 }
 
@@ -211,6 +225,7 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
     display:		inline-block;
     position:		relative;
     max-width:		500px;
+    width: 100%;
 }
 
 .text > p
@@ -235,4 +250,29 @@ footer
     text-align: center;
     padding: 40px 0px;
     
+}
+
+
+.nyhet
+{
+    max-width: 350px;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;  
+    vertical-align: top;
+}
+
+.nyhet > img
+{
+    max-width: 70%;
+}
+
+.nyheter
+{
+    text-align: center;
+}
+
+.nyhet > p
+{
+    text-align: justify;
 }
