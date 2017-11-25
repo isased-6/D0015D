@@ -16,6 +16,11 @@ header
     padding: 10px 0px;
 }
 
+a, a:visited, a:hover
+{
+    color: black;
+}
+
 nav
 {
     width: 100%;
@@ -203,7 +208,6 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
 
 
 
-
 /*
 	START Header slider
 */
@@ -298,7 +302,7 @@ footer
 }
 
 
-.nyhet
+.nyhet, .kontakt
 {
     max-width: 350px;
     display: inline-block;
@@ -312,7 +316,7 @@ footer
     max-width: 70%;
 }
 
-.nyheter
+.nyheter, .kontakter
 {
     text-align: center;
 }
@@ -320,6 +324,50 @@ footer
 .nyhet > p
 {
     text-align: justify;
+}
+
+.omoss > img
+{
+    max-width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.omoss > p
+{
+    display: inline-block;
+    max-width: 400px;
+    text-align: justify;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.meross
+{
+    padding-top: 20px;
+}
+
+.vanster 
+{
+    display: none !important;
+}
+
+.hoger
+{
+    display: inline-block !important;
+}
+
+@media (max-width: 760px)
+{
+    .vanster
+    {
+        display: inline-block !important;
+    }
+    .hoger
+    {
+        display: none !important;
+    }
 }
 
 
@@ -347,3 +395,55 @@ footer
           width:		100%;   
         }
     }
+
+.seglingsnivaer
+{
+    padding: 30px 0px;
+}
+
+.seglingsnivaer > article 
+{
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.even
+{
+    background: #fbfbfb;
+    border-top: 3px solid #f6f6f6;
+}
+
+.krav
+{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 5px dashed #d6d6d6;
+}
+
+.kraveven
+{
+    border-color: #a6a6a6;
+}
+
+.sammanfattning
+{
+    text-align: justify;
+}
+
+.galleri > article > a > img
+{
+    max-width: 150px;
+    width: 95%;
+    display: inline-block;
+    padding: 2px;
+}
+
+.galleri
+{
+    max-width: 1000px;
+    text-align: center;
+    padding: 40px 0px;
+    margin: 0 auto;
+}

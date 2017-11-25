@@ -8,8 +8,10 @@
         <link rel="stylesheet" href="style/normalize.css">
         <link rel="stylesheet" href="style/font-awesome.min.css">
         <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/jquery.fancybox.min.css">
         <script src="javascripts/jquery-3.2.1.min.js"></script>
         <script src="javascripts/script.js"></script>
+        <script src="javascripts/jquery.fancybox.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600" rel="stylesheet">
     </head>
     <html>
@@ -81,27 +83,82 @@
             </header>
             <main>
             
-                <section class="nyheter">
-                <article class="nyhet">
+                <section class="nyheter meross">
+                <article class="omoss">
                     <img src="img/seglare1.png">
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae sagittis lacus, a sollicitudin tellus. Nullam nibh libero, tempor sit amet orci eget, tincidunt euismod nunc. Vestibulum mattis lectus interdum mauris mollis, quis elementum nulla ultrices. Ut cursus arcu ut risus fringilla, eu scelerisque nunc eleifend.
                     </p>
                 </article>
                     
-                <article class="nyhet">
-                    <img src="img/lager.png">
+                <article class="omoss">
+                    <img class="vanster" src="img/lager.png">
                     <p>
                         Duis gravida elit a mollis eleifend. Mauris vulputate orci in lectus euismod posuere. Suspendisse faucibus orci faucibus leo egestas malesuada.
                     </p>
+                    <img class="hoger" src="img/lager.png">
                 </article>
                     
-                <article class="nyhet">
+                <article class="omoss">
                     <img src="img/lunch.png">
                     <p>
                         Proin ullamcorper eget metus ornare rhoncus. Aenean eget tempor quam. Nullam faucibus, sapien et viverra placerat, enim sem fermentum erat, vitae placerat risus lorem eu nibh.
                     </p>
                 </article>
+                </section>
+                <section class="galleri">
+                    <h1>Bildgalleri</h1>
+                    <article>
+                        <h2>2017</h2>
+                        <a class="bildvisning" rel="2017" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2017" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2017" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2017" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2017" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2017" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                    </article>    
+                    <article>
+                        <h2>2016</h2>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2016" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                    </article>
+                    <article>
+                        <h2>2015</h2>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                        <a class="bildvisning" rel="2015" href="img/blogger-image--1686411424.jpg"><img src="img/blogger-image--1686411424.jpg" alt=""/></a>
+                    </article>
                 </section>
             </main>
             
@@ -110,7 +167,7 @@
                     <h2>Kontakta oss</h2>
                     <p>
                         <i class="fa fa-home" aria-hidden="true"></i>
-                        Olov Hartmans väg 37
+                        Olov Hartmans väg 88
                         <br>193 31 Sigtuna
                     </p>
                     <p>
@@ -119,7 +176,7 @@
                     </p>
                     <p>
                         <i class="fa fa-envelope" aria-hidden="true"></i>
-                        ujs@sigtunabk.se
+                        <a href="mailto:ujs@sigtunabk.se">ujs@sigtunabk.se</a>
                     </p>
                 </section>
             </footer>
