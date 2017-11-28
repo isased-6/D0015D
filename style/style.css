@@ -393,7 +393,7 @@ footer
     padding: 30px 0px;
 }
 
-.seglingsnivaer > article 
+.seglingsnivaer > div 
 {
     max-width: 700px;
     width: 90%;
@@ -426,7 +426,7 @@ footer
     text-align: justify;
 }
 
-.galleri > article > a > img
+.galleri > div > a > img
 {
     max-width: 150px;
     width: 95%;
