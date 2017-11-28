@@ -441,3 +441,9 @@ footer
     padding: 40px 0px;
     margin: 0 auto;
 }
+
+.copyright
+{
+    text-align: center;
+    padding: 15px 5px;
+}
