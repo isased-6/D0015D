@@ -403,7 +403,9 @@ footer
 .even
 {
     background: #fbfbfb;
-    border-top: 3px solid #f6f6f6;
+    border: 3px solid #f6f6f6;
+    border-right: none;
+    border-left: none;
 }
 
 .krav
