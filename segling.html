@@ -2,14 +2,22 @@
 <html lang="sv">
     <head>
         <meta charset="utf-8">
+        <!--Responsivitet för mobilversion-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Segling - Sigtuna Jolleklubb</title>
+        <!--Korrigerar mindre "fel" och bidrar till bättre kompabilitet för olika webbläsare och enheter -->
         <link rel="stylesheet" href="style/normalize.css">
+        <!--Typsnitt för knappar och ikoner-->
         <link rel="stylesheet" href="style/font-awesome.min.css">
+        <!--Huvudstilmall-->
         <link rel="stylesheet" href="style/style.css">
+        <!-- Mindre rader kod och öka kompabiliteten-->
         <script src="javascripts/jquery-3.2.1.min.js"></script>
-        <script src="javascripts/script.js"></script>
+        <!--Slider-->
+        <script src="javascripts/slider.js"></script>
+        <!--Typsnitt från Google-->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600" rel="stylesheet">
+        <!--Favoicons för webbläsare och mobiltelefoner-->
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-chrome-192x192.png">
@@ -24,6 +32,7 @@
         <header>
             <nav>
                 <ul>
+                    <!--Menysektion-->
                     <li class="menyitem underline-transition"><a href="index.html">Hem</a></li>
                     <li class="menyitem underline-transition"><a href="omoss.html">Om oss</a></li>
                     <li class="menyitem"><img class="logo" src="img/logo.png" alt="Logotype"></li>
@@ -32,6 +41,7 @@
                 </ul>
             </nav>
             <div id="slider">
+                <!--Pil vänster och höger för slider-->
                 <i class="fa fa-angle-left" id="arrowLeft" style="display: none;"></i>
                 <i class="fa fa-angle-right" id="arrowRight" style="display: inline;"></i>
                 <div class="slides-wrapper">
@@ -73,7 +83,8 @@
                 </div>
             </div>
         </header>
-        <div class="seglingsnivaer">
+        <div class="kunskapsniva">
+            <!--Lägerinformation-->
             <div class="sammanfattning">
                 <h1>Nybörjare</h1>
                 <span class="krav">
@@ -94,7 +105,8 @@
                 </ul>
             </div>
         </div>
-        <div class="seglingsnivaer even">
+        <div class="kunskapsniva even">
+            <!--Lägerinformation-->
             <div class="sammanfattning">
                 <h1>Fortsättare</h1>
                 <span class="krav kraveven">
@@ -117,7 +129,8 @@
                 </ul>
             </div>
         </div>
-        <div class="seglingsnivaer">
+        <div class="kunskapsniva">
+            <!--Lägerinformation-->
             <div class="sammanfattning">
                 <h1>Kappseglingskrus</h1>
                 <div class="krav">
@@ -141,6 +154,7 @@
         </div>
         <footer>
             <div>
+                <!--Fotnot med adress, koordinater och mailadress-->
                 <h2>Kontakta oss</h2>
                 <p>
                     <i class="fa fa-home" aria-hidden="true"></i>

@@ -1,9 +1,11 @@
+/* All text på sidan */
 html
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 300;
 }
 
+/* Alla rubriker */
 h1, h2, h3, h4, h5, h6
 {
     text-transform: uppercase;
@@ -16,11 +18,13 @@ header
     padding: 10px 0px;
 }
 
+/* Färger på länkar */
 a, a:visited, a:hover
 {
     color: black;
 }
 
+/* Start meny */
 nav
 {
     width: 100%;
@@ -36,11 +40,13 @@ nav > ul
     width: 100%;
 }
 
+/* Aktuell sida (current page) */
 .menyactive
 {
     font-weight: bold;
 }
 
+/* Menyknappar */
 .menyitem
 {
     vertical-align: middle;
@@ -48,12 +54,14 @@ nav > ul
     text-transform: uppercase;
     font-size: x-large;
     text-align: center;
+    /* Alla knappar lika breda */
     min-width: 100px;
     
     display: block;
     margin: 0px 0px;
 }
 
+/* Börjar på 800 pixlar - bilr horisontellmeny */
 @media (min-width: 800px)
 {
 
@@ -63,6 +71,8 @@ nav > ul
     }
 }
 
+/* Stegvisförbättring av menyns utseende */
+/* Börjar på 1000 pixlar */
 @media (min-width: 1000px)
 {
     .menyitem
@@ -71,6 +81,7 @@ nav > ul
     }
 }
 
+/* Börjar på 1250 pixlar */
 @media (min-width: 1250px)
 {
     .menyitem
@@ -79,81 +90,25 @@ nav > ul
     }
 }
 
+/* Max bredd 220pixlar för mindre skärmar / mobil */
 @media (max-width: 220px)
 {
     .text
     {
+        /* Bryter för långa ord */
         word-wrap: break-word;    
     }
 }
 
-/*
-.menyitem:before 
-{
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-*/
-
+/* Knappar för menyn */
 .menyitem > a, .menyitem > a:visited, .menyitem > a:hover
 {
     color: white;
     text-decoration: none;
 }
 
-/*
-.menyitem > a,
-.menyitem > a:after,
-.menyitem > a:before {
-  transition: all .5s;
-}
-*/
 
-/*
-.menyitem > a{
-  position: relative;
-}
-.menyitem > a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: white;
-  height: 1px;
-}
-.menyitem > a:hover:after {
-  width: 100%;
-}
-
-.menyitem > a {
-  transition: all 2s;
-}
-
-.menyitem > a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
-}
-.menyitem > a:hover {
-  color: #fff;
-  z-index: 1;
-}
-.menyitem > a:hover:after {
-  z-index: -10;
-  animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  -moz-animation: fill 1s forwards;
-  opacity: 1;
-}
-*/
-
-/* Systembolagets tuffa underline */
+/* Saxad från Systembolaget - animerad underline i menyn */
 .underline-transition,
 .underline-transition-child__element {
     position: relative;
@@ -191,22 +146,14 @@ nav > ul
     transform: scaleX(1);
 }
 
-/* /Systemets tuffa underline */
+/* Slut systembolagets underline */
 
 .logo
 {
     max-width: 100%;
 }
 
-/*
-
-Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=1100 
-
-
-
-*/
-
-
+/* Slut meny */
 
 /*
 	START Header slider
@@ -215,25 +162,30 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
 #slider
 {
 	color:			white;
+    /* Width anger totalbredd */
 	box-sizing: 	border-box;
 	padding:		50px 20px;
 	background:		none;
 	text-align:	 	center;
 	position:		relative;
+    /* Fullösning för sliderin - "Flyter ut" över restan av sidan annars */
 	margin-bottom:	-70px;
 }
 
+/* Navigationspilar */
 #arrowLeft, #arrowRight
 {
 	  position: 	absolute;
+      /* Alltid överst */
 	  z-index:  	9999;
+      /* Döljs som standard */
 	  display:		none;
 	  font-size:	35px;
 	  cursor:		pointer;
 	  bottom:		70px;
-	  display:		none;
 }
 
+/* Större pilar på större skärm */
 @media (min-width: 620px)
 {
     #arrowLeft, #arrowRight
@@ -242,24 +194,31 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
     }
 }
 
+/* Placera vänster pil */
 #arrowLeft
 {
   left:		20px;
 }
 
+/* Placera höger pil */
 #arrowRight
 {
   right: 20px;
 }
 
+
+/* Behållare för samtliga slides */
 .slides-wrapper
 {
   position: 	relative;
   width: 		100%;
+  /* Visa aldrig scrollbar */
   overflow: 	hidden;
+  /* Placera samtliga slides bedvid varandra även utanför skärm */    
   white-space:	nowrap;
 }
 
+/* Varje slide */ 
 .slide
 {
     width:			100%;
@@ -269,6 +228,7 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
     white-space:	normal;
 }
 
+/* Behållare för all text i slidern */
 .text
 {
     display:		inline-block;
@@ -277,12 +237,14 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
     width: 100%;
 }
 
+/* Brödtext */
 .text > p
 {
     white-space: 	normal;
     font-size:		1.4em;
 }
 
+/* Undertecknat */
 .text > .name
 {
     font-style:	italic;
@@ -290,24 +252,18 @@ Dyr effekt med knappar - https://codepen.io/maheshambure21/pen/QwXaRw?editors=11
 
 
 /*
-	END Header slider
+	SLUT Header slider
 */
 
-footer 
-{
-    background: #f7f7f7; 
-    text-align: center;
-    padding: 40px 0px;
-    
-}
 
-
+/* START Nyheter och Kontakt */ 
 .nyhet, .kontakt
 {
     max-width: 350px;
     display: inline-block;
     padding: 10px;
-    margin: 20px;  
+    margin: 20px;
+    /* Justering av nyheter i överkant */
     vertical-align: top;
 }
 
@@ -326,6 +282,26 @@ footer
     text-align: justify;
 }
 
+/* SLUT Nyheter och kontakt */
+
+/* START Karta inställningar */
+.gmaps
+{
+	width:		100%;
+	margin:		0 auto -3px auto;
+}
+
+
+.gmaps > iframe
+{
+    position:       relative;
+    width:			100%;
+    height:			350px;
+    border:			0;
+}
+/* SLUT Karta inställningar */
+
+/* START Om oss */
 .omoss > img
 {
     max-width: 70%;
@@ -343,21 +319,24 @@ footer
     padding: 10px;
 }
 
-.meross
+.omosscontainer
 {
     padding-top: 20px;
 }
 
+/* När webbläsare är större än 760 pixlar visas inte vänster bild om texten */
 .vanster 
 {
     display: none !important;
 }
 
+/* När webbläsare större än 760 pixlar visas bild på höger sida om text */
 .hoger
 {
     display: inline-block !important;
 }
 
+/* Vid fönsterstorlek <=760 pixlar visas vänsterbild */
 @media (max-width: 760px)
 {
     .vanster
@@ -370,34 +349,34 @@ footer
     }
 }
 
+/* SLUT Om oss */
 
-	
-.gmaps
+/* START Galleri */
+.galleri > div > a > img
 {
-	width:		100%;
-	margin:		0 auto -3px auto;
+    max-width: 150px;
+    /* Max 95% av skärmbredden */
+    width: 95%;
+    display: inline-block;
+    padding: 2px;
 }
 
-
-.gmaps > iframe
+.galleri
 {
-    position:       relative;
-    width:			100%;
-    height:			350px;
-    border:			0;
+    max-width: 1000px;
+    text-align: center;
+    padding: 40px 0px;
+    /* Centrerar */
+    margin: 0 auto;
 }
 
+/* SLUT Galleri */
 
-.seglingsnivaer
+/* START Segling */
+
+.kunskapsniva
 {
     padding: 30px 0px;
-}
-
-.seglingsnivaer > div 
-{
-    max-width: 700px;
-    width: 90%;
-    margin: 0 auto;
 }
 
 .even
@@ -424,26 +403,30 @@ footer
 .sammanfattning
 {
     text-align: justify;
-}
-
-.galleri > div > a > img
-{
-    max-width: 150px;
-    width: 95%;
-    display: inline-block;
-    padding: 2px;
-}
-
-.galleri
-{
-    max-width: 1000px;
-    text-align: center;
-    padding: 40px 0px;
+    max-width: 700px;
+    /* Max 90% av skrämsbredden */
+    width: 90%;
+    /* Centrerar */
     margin: 0 auto;
 }
 
+/* SLUT Segling */
+
+/* START Fotnot */
+footer 
+{
+    background: #f7f7f7; 
+    text-align: center;
+    padding: 40px 0px;
+    
+}
+/* SLUT Fotnot */
+
+
+/* START Copyright */
 .copyright
 {
     text-align: center;
     padding: 15px 5px;
 }
+/* SLUT Copyright */

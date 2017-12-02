@@ -2,16 +2,26 @@
 <html lang="sv">
     <head>
         <meta charset="utf-8">
+        <!--Responsivitet för mobilversion-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Om oss - Sigtuna Jolleklubb</title>
+        <!--Korrigerar mindre "fel" och bidrar till bättre kompabilitet för olika webbläsare och enheter -->
         <link rel="stylesheet" href="style/normalize.css">
+        <!--Typsnitt för knappar och ikoner-->
         <link rel="stylesheet" href="style/font-awesome.min.css">
+        <!--Huvudstilmall-->
         <link rel="stylesheet" href="style/style.css">
+        <!--Bildgalleri och bildvisning-->
         <link rel="stylesheet" href="style/jquery.fancybox.min.css">
+        <!-- Mindre rader kod och öka kompabiliteten-->
         <script src="javascripts/jquery-3.2.1.min.js"></script>
-        <script src="javascripts/script.js"></script>
+        <!--Slider-->
+        <script src="javascripts/slider.js"></script>
+        <!--Bildgalleri och bildvisning-->
         <script src="javascripts/jquery.fancybox.min.js"></script>
+        <!--Bildgalleri och bildvisning-->
         <script src="javascripts/fancybox.js"></script>
+        <!--Typsnitt från Google-->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,600" rel="stylesheet">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
@@ -28,6 +38,7 @@
         <header>
             <nav>
                 <ul>
+                    <!--Menysektion-->
                     <li class="menyitem underline-transition"><a href="index.html">Hem</a></li>
                     <li class="menyitem underline-transition menyactive"><a href="omoss.html">Om oss</a></li>
                     <li class="menyitem"><img class="logo" src="img/logo.png" alt="Logotype"></li>
@@ -36,6 +47,7 @@
                 </ul>
             </nav>
             <div id="slider">
+                <!--Pil vänster och höger för slider-->
                 <i class="fa fa-angle-left" id="arrowLeft" style="display: none;"></i>
                 <i class="fa fa-angle-right" id="arrowRight" style="display: inline;"></i>
                 <div class="slides-wrapper">
@@ -78,21 +90,26 @@
             </div>
         </header>
         <main>
-            <div class="nyheter meross">
+            <div class="nyheter omosscontainer">
                 <div class="omoss">
+                    <!--Om oss information-->
                     <img src="img/seglare1.png" alt="Bild på laser seglare">
                     <p>
                         Under åren har många seglare gått på våra sommarläger. Flera har fått har fått blodad tand och vissa har tävlat på riktigt hög nivå. Alexander på bilden har seglat både EM och VM i Laser. Vi har även fostrat en seglare som deltagit i Olympiskaspelen. 
                     </p>
                 </div>
                 <div class="omoss">
+                    <!--Om oss information-->
+                    <!--Bild vänster visas på mobil-->
                     <img class="vanster" src="img/lager.png" alt="Bild på båtupptagning">
                     <p>
                         I mer än 40 år har vi haft sommarläger som varit uppskattade av både stora och små. Varje sommar är vårt mål att hålla minst fyra stycken läger av olika nivå. Allt från nybörjare till kappseglingsläger. Vid intresse kan även ett vuxenläger erbjudas. Dock måste vi ha minst 5 intresserade. 
                     </p>
+                    <!--Bild höger visas på datorer och större skärmar -->
                     <img class="hoger" src="img/lager.png" alt="Bild på båtupptagning">
                 </div>
                 <div class="omoss">
+                    <!--Om oss information-->
                     <img src="img/lunch.png" alt="Lägerelever äter lunch">
                     <p>
                         Sigtuna Jolleklubb sträva efter att få fler att upptäcka hur roligt det är att segla. Därför jobbar vi mycket med gemenskap. Under lägerverksamheten har vi mycket lek och skoj. Vi försöker även i samband med evenemang göra lekar och ha gemensam fika eller lunch.  
@@ -100,6 +117,7 @@
                 </div>
             </div>
             <div class="galleri">
+                <!--Bildgalleri-->
                 <h1>Bildgalleri</h1>
                 <div>
                     <h2>2017</h2>
@@ -132,6 +150,7 @@
         </main>
         <footer>
             <div>
+                <!--Fotnot med adress, koordinater och mailadress-->
                 <h2>Kontakta oss</h2>
                 <p>
                     <i class="fa fa-home" aria-hidden="true"></i>
